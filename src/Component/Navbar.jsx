@@ -32,16 +32,16 @@ function Navbar() {
                 DOWNLOAD
               </Link>
             </li>
-            <li className="nav-item dropdown">
-          <Link className="nav-link dropdown-toggle heText" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            GET STARTED
-          </Link>
-          <ul className="dropdown-menu">
-            <li><Link className="dropdown-item fText fw-bold"  to='/login'>Login</Link></li>
-            <li><hr className="dropdown-divider"/></li>
-            <li><Link className="dropdown-item fText fw-bold" to='/register' >Register</Link></li>
-          </ul>
-        </li>
+            <li className="nav-item ps-md-3">
+              <Link className="nav-link heText" to="/register">
+                REGISTER
+              </Link>
+            </li>
+            <li className="nav-item ps-md-3">
+              <Link className="nav-link heText" to="/login">
+                LOGIN
+              </Link>
+            </li>
             <li className="nav-item ps-md-3">
               <Link className="nav-link heText" to="/">
                 CONTACT

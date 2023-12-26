@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import her0 from "../assets/her00.png";
+import { Link } from "react-router-dom";
 function Hero() {
   return (
     <div className="container-fluid hero pt-3">
@@ -18,7 +19,7 @@ function Hero() {
             check what do your friends think about you. With the help of Kubool,
             you can send and recieve anonymous compliments easily for free!
           </p>
-          <button className="hBtn ms-md-5 mb-5 fw-bold">Download</button>
+          <button className="hBtn ms-md-5 mb-5 fw-bold"><Link to='/register'>Get Started</Link></button>
         </div>
         <div className="col-md-6">
           <img src={her0} alt="" className="img-fluid" />
