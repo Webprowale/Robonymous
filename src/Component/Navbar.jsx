@@ -7,7 +7,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
         <Link className="navbar-brand heText  fs-2 fw-bold" to="/">
-          <span className="fs-2">🧸</span>Robonymous
+          <span className="fs-1 text-black">🧸</span>Robonymous
         </Link>
         <button
           className="navbar-toggler"

@@ -1,41 +1,38 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faUser,faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import { faUser, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 function Login() {
   return (
-    <div className="container-fluid p-5 hero">
-      <div className="container p-5 bg-white">
+    <div className="container-fluid hero login">
+      <div className=" mx-auto formBody">
         <div className="text-center">
-          <h2 className="fw-bold  fs-2 fText">Member Login</h2>
+        <h2 className="fw-bold  fs-2 fText">Member Login</h2>
+        <span className="fs-1 text-black">🧸</span>
+        <p className="mb-5 fw-semibold">
+          Recieve anonymous compliments from your friends and send
+          anonymous messages to your friends for free.
+        </p>
         </div>
         <form>
-          <div class="input-group mb-3 p-3 rounded-pill bg-white border-0 outline-0">
-            <span class="input-group-text" id="username-addon">
-            <FontAwesomeIcon icon={faUser} />
+          <div class="mb-3 inputBody  ps-3 mx-auto">
+            <span>
+              <FontAwesomeIcon icon={faUser} size="2xl" color="#C33764" />
             </span>
             <input
               type="text"
-              class="form-control p-3"
+              class=""
               placeholder="Username"
-              aria-label="Username"
-              aria-describedby="username-addon"
               name="username"
             />
           </div>
 
-          <div class="input-group mb-3 p-3 rounded-pill bg-white border-0 outline-0">
-            <span class="input-group-text" id="email-addon">
-            <FontAwesomeIcon icon={faEnvelope} />
+          <div class=" mb-3 inputBody  ps-3 mx-auto">
+            <span>
+              <FontAwesomeIcon icon={faEnvelope} size="2xl" color="#C33764" />
             </span>
-            <input
-              type="email"
-              class="form-control"
-              placeholder="Email"
-              aria-label="Email"
-              aria-describedby="email-addon"
-              name="email"
-            />
+            <input type="email" class="" placeholder="Email" name="email" />
           </div>
+          <button className="formBtn hero text-white px-5 py-2 rounded-pill w-100">Login</button>
         </form>
       </div>
     </div>
