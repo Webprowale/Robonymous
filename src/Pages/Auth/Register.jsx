@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faUser, faLock } from "@fortawesome/free-solid-svg-icons";
 import { Link } from 'react-router-dom';
 function Register() {
   return (
@@ -25,9 +25,9 @@ function Register() {
 
         <div class=" mb-3 inputBody  ps-3 mx-auto">
           <span>
-            <FontAwesomeIcon icon={faEnvelope} size="2xl" color="#C33764" />
+          <FontAwesomeIcon icon={faLock} size="2xl" color="#C33764" />
           </span>
-          <input type="email" class="" placeholder="Email" name="email" />
+          <input type="password" class="" placeholder="Email" name="password" />
         </div>
         <button className="formBtn hero text-white px-5 py-2 rounded-pill w-100">Register</button>
       </form>
